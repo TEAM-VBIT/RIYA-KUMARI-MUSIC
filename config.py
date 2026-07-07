@@ -22,8 +22,8 @@ class Config:
         self.SESSION2 = getenv("SESSION2", None)
         self.SESSION3 = getenv("SESSION3", None)
 
-        self.SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/billubotssupport")
-        self.SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/+WAOT47P-70QwOTBl")
+        self.SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/annu_updates")
+        self.SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/annu_support")
 
         self.YTPROXY_URL = getenv("YTPROXY_URL", "https://tgapi.xbitcode.com")  # xBit Music Endpoint
         self.YT_API_KEY = getenv("YT_API_KEY", "")  # Get from https://t.me/tgmusic_apibot
@@ -33,8 +33,8 @@ class Config:
         self.RAILWAY_YT_API_KEY = getenv("RAILWAY_YT_API_KEY", "")
 
         # Shruti API — Primary download source (get key from @SHRUTIAPIBOT)
-        self.SHRUTI_API_URL = getenv("SHRUTI_API_URL", "http://api01.shrutibots.site")
-        self.SHRUTI_API_KEY = getenv("SHRUTI_API_KEY", "")
+        self.SHRUTI_API_URL = getenv("SHRUTI_API_URL", "https://api01.shrutibots.site")
+        self.SHRUTI_API_KEY = getenv("SHRUTI_API_KEY", "ShrutiBots3OYSuzKa7u0PyQi3ifqT")
         
         self.AUTO_LEAVE: bool = getenv("AUTO_LEAVE", "False").lower() == "true"
         self.AUTO_END: bool = getenv("AUTO_END", "False").lower() == "true"
