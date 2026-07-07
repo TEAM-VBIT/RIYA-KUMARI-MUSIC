@@ -38,6 +38,7 @@ async def start(_, message: types.Message):
     key = buttons.start_key(message.lang, private)
     await message.reply_photo(
         photo=config.START_IMG,
+          has_spoiler=True,
         caption=_text,
         reply_markup=key,
         quote=not private,
