@@ -5,7 +5,7 @@
 <b>Telegram Group Calls Streaming Bot</b><br>
 Supports YouTube, Spotify, Resso, Apple Music, SoundCloud and M3U8 links.
 
-<a href="https://github.com/AnonymousX1025/AnonXMusic/stargazers">
+<a href="https://github.com/TEAM-KRITI/Musicbotanon">
     <img src="https://img.shields.io/github/stars/AnonymousX1025/AnonXMusic?color=blueviolet&logo=github&logoColor=black&style=for-the-badge" alt="Stars"/>
 </a>
 <a href="https://github.com/AnonymousX1025/AnonXMusic/network/members">
