@@ -73,19 +73,19 @@ class Inline:
             rows = [
                 [
                     self.ikb(
-                        text=_lang["⌯ ʙᴀᴄᴋ ⌯"],
+                        text=_lang["back"],
                         callback_data="help back",
                         style=enums.ButtonStyle.PRIMARY,
                     ),
                     self.ikb(
-                        text=_lang["⌯ ᴄʟᴏsᴇ⌯"],
+                        text=_lang["close"],
                         callback_data="help close",
                         style=enums.ButtonStyle.DANGER,
                     ),
                 ]
             ]
         else:
-            cbs = ["⌯ ᴀᴅᴍɪɴs ⌯", "⌯ ᴀᴜᴛʜ ⌯", "⌯ ʙʟᴀᴄᴋʟɪsᴛ ⌯", "⌯ ʟᴀɴɢ ⌯", "⌯ ᴘɪɴɢ ⌯", "⌯ ᴘʟᴀʏ ⌯", "⌯ ǫᴜᴇᴜᴇ ⌯", "⌯ sᴛᴀᴛs ⌯", "⌯ sᴜᴅᴏ ⌯"]
+            cbs = ["admins", "auth", "blist", "lang", "ping", "play", "queue", "stats", "sudo"]
             buttons = [
                 self.ikb(text=_lang[f"help_{i}"], callback_data=f"help {cb}")
                 for i, cb in enumerate(cbs)
@@ -141,21 +141,21 @@ class Inline:
             [
                 [
                     self.ikb(
-                        text=lang["⌯ ᴘʟᴀʏ-ᴍᴏᴅᴇ ⌯"] + " ➜", callback_data="⌯ sᴇᴛᴛɪɴɢs ⌯",
+                        text=lang["play_mode"] + " ➜", callback_data="settings",
                     ),
-                    self.ikb(text=admin_only, callback_data="⌯ sᴇᴛᴛɪɴɢs-ᴘʟᴀʏ ⌯"),
+                    self.ikb(text=admin_only, callback_data="settings play"),
                 ],
                 [
                     self.ikb(
-                        text=lang["⌯ ᴄᴍᴅ-ᴅᴇʟᴇᴛᴇ ⌯"] + " ➜", callback_data="⌯ sᴇᴛᴛɪɴɢs ⌯",
+                        text=lang["cmd_delete"] + " ➜", callback_data="settings",
                     ),
-                    self.ikb(text=cmd_delete, callback_data="⌯ sᴇᴛᴛɪɴɢs-ᴅᴇʟᴇᴛᴇ ⌯"),
+                    self.ikb(text=cmd_delete, callback_data="settings delete"),
                 ],
                 [
                     self.ikb(
-                        text=lang["⌯ ʟᴀɴɢᴜᴀɢᴇ ⌯"] + " ➜", callback_data="⌯ sᴇᴛᴛɪɴɢs ⌯",
+                        text=lang["language"] + " ➜", callback_data="settings",
                     ),
-                    self.ikb(text=lang_codes[language], callback_data="⌯ ʟᴀɴɢᴜᴀɢᴇ ⌯"),
+                    self.ikb(text=lang_codes[language], callback_data="language"),
                 ],
             ]
         )
@@ -174,21 +174,21 @@ class Inline:
         ]
         if private:
             rows += [
-                [self.ikb(text=lang["⌯ ʜᴇʟᴘ ⌯"], callback_data="help")],
+                [self.ikb(text=lang["help"], callback_data="help")],
                 [
-                    self.ikb(text=lang["⌯ sᴜᴘᴘᴏʀᴛ ⌯"], url=config.SUPPORT_CHAT),
-                    self.ikb(text=lang["⌯ ᴄʜᴀɴɴᴇʟ ⌯"], url=config.SUPPORT_CHANNEL),
+                    self.ikb(text=lang["support"], url=config.SUPPORT_CHAT),
+                    self.ikb(text=lang["channel"], url=config.SUPPORT_CHANNEL),
                 ],
                 [
                     self.ikb(
-                        text=lang["⌯ sᴏᴜʀᴄᴇ ⌯"],
+                        text=lang["sᴏᴜʀᴄᴇ"],
                         url="https://github.com/yjee4247-code/kirtipublic",
                         style=enums.ButtonStyle.DANGER,
                     )
                 ]
             ]
         else:
-            rows += [[self.ikb(text=lang["⌯ ʟᴀɴɢᴜᴀɢᴇ ⌯"], callback_data="language")]]
+            rows += [[self.ikb(text=lang["language"], callback_data="language")]]
         return self.ikm(rows)
 
     def yt_key(self, link: str) -> types.InlineKeyboardMarkup:
@@ -196,7 +196,7 @@ class Inline:
             [
                 [
                     self.ikb(text="❐", copy_text=link),
-                    self.ikb(text="⌯ ʏᴏᴜᴛᴜʙᴇ ⌯", url=link),
+                    self.ikb(text="Youtube", url=link),
                 ],
             ]
         )
