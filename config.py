@@ -25,37 +25,22 @@ class Config:
         self.SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/annu_updates")
         self.SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/annu_support")
 
-        self.YTPROXY_URL = getenv("YTPROXY_URL", "https://tgapi.xbitcode.com")  # xBit Music Endpoint
-        self.YT_API_KEY = getenv("YT_API_KEY", "")  # Get from https://t.me/tgmusic_apibot
-
-        # Optional: yt-dlp PO Token & Visitor Data to bypass YouTube bot-detection
-        # See: https://github.com/yt-dlp/yt-dlp/wiki/PO-Token-Guide
-        self.YT_PO_TOKEN     = getenv("YT_PO_TOKEN",     None)
-        self.YT_VISITOR_DATA = getenv("YT_VISITOR_DATA", None)
-
         # Railway self-hosted YouTube API
         self.RAILWAY_YT_API_URL = getenv("RAILWAY_YT_API_URL", "")
         self.RAILWAY_YT_API_KEY = getenv("RAILWAY_YT_API_KEY", "")
 
-        # Shruti API — Primary download source (get key from @SHRUTIAPIBOT)
-        self.SHRUTI_API_URL = getenv("SHRUTI_API_URL", "")
-        self.SHRUTI_API_KEY = getenv("SHRUTI_API_KEY", "")
-        
+
+        self.DEFAULT_THUMB = getenv("DEFAULT_THUMB", "https://te.legra.ph/file/3e40a408286d4eda24191.jpg")
+        self.PING_IMG = getenv("PING_IMG", "https://d.uguu.se/QmhEjBZF.jpg")
+        self.START_IMG = getenv("START_IMG", "https://d.uguu.se/QmhEjBZF.jpg")
+
         self.AUTO_LEAVE: bool = getenv("AUTO_LEAVE", "False").lower() == "true"
         self.AUTO_END: bool = getenv("AUTO_END", "False").lower() == "true"
-    
+
         self.THUMB_GEN: bool = getenv("THUMB_GEN", "True").lower() == "true"
         self.VIDEO_PLAY: bool = getenv("VIDEO_PLAY", "True").lower() == "true"
 
         self.LANG_CODE = getenv("LANG_CODE", "en")
-
-        self.COOKIES_URL = [
-            url for url in getenv("COOKIES_URL", "").split(" ")
-            if url and "batbin.me" in url
-        ]
-        self.DEFAULT_THUMB = getenv("DEFAULT_THUMB", "https://te.legra.ph/file/3e40a408286d4eda24191.jpg")
-        self.PING_IMG = getenv("PING_IMG", "https://d.uguu.se/QmhEjBZF.jpg")
-        self.START_IMG = getenv("START_IMG", "https://d.uguu.se/QmhEjBZF.jpg")
 
     def check(self):
         missing = [
