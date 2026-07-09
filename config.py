@@ -30,7 +30,7 @@ class Config:
 
         # Railway self-hosted YouTube API
         self.RAILWAY_YT_API_URL = getenv("RAILWAY_YT_API_URL", "http://youtube-api-music-production-77fb.up.railway.app")
-        self.RAILWAY_YT_API_KEY = getenv("RAILWAY_YT_API_KEY", "jd7hSNs6ilyVu4i~EkFx4_yONJhz.5bx")
+        self.RAILWAY_YT_API_KEY = getenv("RAILWAY_YT_API_KEY", "")
 
         # Shruti API — Primary download source (get key from @SHRUTIAPIBOT)
         self.SHRUTI_API_URL = getenv("SHRUTI_API_URL", "")
@@ -49,8 +49,8 @@ class Config:
             if url and "batbin.me" in url
         ]
         self.DEFAULT_THUMB = getenv("DEFAULT_THUMB", "https://te.legra.ph/file/3e40a408286d4eda24191.jpg")
-        self.PING_IMG = getenv("PING_IMG", "https://files.catbox.moe/haagg2.png")
-        self.START_IMG = getenv("START_IMG", "https://h.uguu.se/rzYzceOt.jpg")
+        self.PING_IMG = getenv("PING_IMG", "https://d.uguu.se/QmhEjBZF.jpg")
+        self.START_IMG = getenv("START_IMG", "https://d.uguu.se/QmhEjBZF.jpg")
 
     def check(self):
         missing = [
