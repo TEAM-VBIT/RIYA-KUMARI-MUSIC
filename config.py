@@ -28,8 +28,9 @@ class Config:
         # Railway self-hosted YouTube API
         self.RAILWAY_YT_API_URL = getenv("RAILWAY_YT_API_URL", "youtube-api-music-production-77fb.up.railway.app")
         self.RAILWAY_YT_API_KEY = getenv("RAILWAY_YT_API_KEY", "jd7hSNs6ilyVu4i~EkFx4_yONJhz.5bx")
+        self.COOKIES_URL = getenv("COOKIES_URL", "")
 
-
+        
         self.DEFAULT_THUMB = getenv("DEFAULT_THUMB", "https://te.legra.ph/file/3e40a408286d4eda24191.jpg")
         self.PING_IMG = getenv("PING_IMG", "https://i.ibb.co/YFCNkVZM/x.jpg")
         self.START_IMG = getenv("START_IMG", "https://i.ibb.co/YFCNkVZM/x.jpg")
