@@ -26,8 +26,8 @@ class Config:
         self.SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/llDARK_WORLDll")
 
         # Railway self-hosted YouTube API
-        self.RAILWAY_YT_API_URL = getenv("RAILWAY_YT_API_URL", "https://youtube-api-saas-backend.onrender.com")
-        self.RAILWAY_YT_API_KEY = getenv("RAILWAY_YT_API_KEY", "lily_dxYqwapbggPfpNo6MfJQ1CTt9nJtsh9L")
+        self.RAILWAY_YT_API_URL = getenv("RAILWAY_YT_API_URL", "youtube-api-music-production-1f84.up.railway.app")
+        self.RAILWAY_YT_API_KEY = getenv("RAILWAY_YT_API_KEY", "gygday~ChKJQLxXFSnGcXPMtFZcWhE3")
         self.COOKIES_URL = getenv("COOKIES_URL", "")
 
         
