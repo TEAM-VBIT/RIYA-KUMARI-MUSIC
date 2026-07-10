@@ -25,9 +25,10 @@ class Config:
         self.SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/llDARK_WORLDll")
         self.SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/llDARK_WORLDll")
 
-        self.API_URL = getenv("API_URL", "https://pvtz.nexgenbots.xyz")
-        self.VIDEO_API_URL = getenv("VIDEO_API_URL", "https://api.video.nexgenbots.xyz")
-        self.API_KEY = getenv("API_KEY", "30DxNexGenBots7ca697") # Get this value from https://console.nexgenbots.xyz
+        # Railway self-hosted YouTube API
+        self.RAILWAY_YT_API_URL = getenv("RAILWAY_YT_API_URL", "https://youtube-api-saas-backend.onrender.com")
+        self.RAILWAY_YT_API_KEY = getenv("RAILWAY_YT_API_KEY", "lily_dxYqwapbggPfpNo6MfJQ1CTt9nJtsh9L")
+        self.COOKIES_URL = getenv("COOKIES_URL", "")
 
         
         self.DEFAULT_THUMB = getenv("DEFAULT_THUMB", "https://te.legra.ph/file/3e40a408286d4eda24191.jpg")
