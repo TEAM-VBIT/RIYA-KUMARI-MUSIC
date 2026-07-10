@@ -22,8 +22,8 @@ class Config:
         self.SESSION2 = getenv("SESSION2", None)
         self.SESSION3 = getenv("SESSION3", None)
 
-        self.SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/annu_updates")
-        self.SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/annu_support")
+        self.SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/llDARK_WORLDll")
+        self.SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/llDARK_WORLDll")
 
         # Railway self-hosted YouTube API
         self.RAILWAY_YT_API_URL = getenv("RAILWAY_YT_API_URL", "")
@@ -31,8 +31,8 @@ class Config:
 
 
         self.DEFAULT_THUMB = getenv("DEFAULT_THUMB", "https://te.legra.ph/file/3e40a408286d4eda24191.jpg")
-        self.PING_IMG = getenv("PING_IMG", "https://d.uguu.se/QmhEjBZF.jpg")
-        self.START_IMG = getenv("START_IMG", "https://d.uguu.se/QmhEjBZF.jpg")
+        self.PING_IMG = getenv("PING_IMG", "https://i.ibb.co/YFCNkVZM/x.jpg")
+        self.START_IMG = getenv("START_IMG", "https://i.ibb.co/YFCNkVZM/x.jpg")
 
         self.AUTO_LEAVE: bool = getenv("AUTO_LEAVE", "False").lower() == "true"
         self.AUTO_END: bool = getenv("AUTO_END", "False").lower() == "true"
