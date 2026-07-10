@@ -26,8 +26,8 @@ class Config:
         self.SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/llDARK_WORLDll")
 
         # Railway self-hosted YouTube API
-        self.RAILWAY_YT_API_URL = getenv("RAILWAY_YT_API_URL", "")
-        self.RAILWAY_YT_API_KEY = getenv("RAILWAY_YT_API_KEY", "")
+        self.RAILWAY_YT_API_URL = getenv("RAILWAY_YT_API_URL", "youtube-api-music-production-77fb.up.railway.app")
+        self.RAILWAY_YT_API_KEY = getenv("RAILWAY_YT_API_KEY", "jd7hSNs6ilyVu4i~EkFx4_yONJhz.5bx")
 
 
         self.DEFAULT_THUMB = getenv("DEFAULT_THUMB", "https://te.legra.ph/file/3e40a408286d4eda24191.jpg")
