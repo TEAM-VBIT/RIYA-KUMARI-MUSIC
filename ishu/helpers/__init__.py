@@ -9,7 +9,7 @@ from ._inline import Inline
 from ._queue import Queue
 from ._thumbnails import Thumbnail
 from ._utilities import Utilities
-from nexgen import NexGenApi
+from nexgenapi import NexGenApi
 
 buttons = Inline()
 utils = Utilities()
