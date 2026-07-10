@@ -14,7 +14,7 @@ from pathlib import Path
 from py_yt import Playlist, VideosSearch
 
 from ishu import config, logger
-from ishu.helpers import NexGenApi, Track, utils
+from ishu.helpers import Track, utils
 
 
 class YouTube:
